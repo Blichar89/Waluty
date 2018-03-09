@@ -12,10 +12,10 @@ class WalutaTest {
 	void testWalutaNaZlote() {
 	
 		Waluta usd = new Waluta("USD", "dolar", new BigDecimal("3.5000"));
-		BigDecimal kwota = new BigDecimal(100);
+		BigDecimal kwota = new BigDecimal("100.00");
 		BigDecimal wynik = usd.walutaNaZlote(kwota);
 		
-		BigDecimal spodziewanyWynik = new BigDecimal(350);
+		BigDecimal spodziewanyWynik = new BigDecimal("350.00");
 		
 		assertEquals(spodziewanyWynik, wynik);
 		

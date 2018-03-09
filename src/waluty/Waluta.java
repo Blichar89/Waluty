@@ -1,6 +1,7 @@
 package waluty;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 public class Waluta {
 
@@ -72,7 +73,7 @@ public class Waluta {
 		
 		
 		
-		return null;
+		return kwota.multiply(kurs).setScale(2, RoundingMode.HALF_UP);
 	}
 	
 }	
