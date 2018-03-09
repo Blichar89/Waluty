@@ -68,6 +68,11 @@ public class Waluta {
 		return true;
 	}
 	
-	
+	public BigDecimal walutaNaZlote(BigDecimal kwota) {
+		
+		
+		
+		return null;
+	}
 	
 }	
